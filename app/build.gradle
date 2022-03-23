@@ -37,6 +37,12 @@ android {
 }
 
 dependencies {
+    //카카오 로그인
+    implementation group: 'com.kakao.sdk', name: 'usermgmt', version: '1.30.0'
+    implementation group: 'com.kakao.sdk', name: 'kakaolink', version: '1.30.5'
+
+    implementation "com.kakao.sdk:v2-user:2.9.0" // 카카오 로그인
+
     // Lottie
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
