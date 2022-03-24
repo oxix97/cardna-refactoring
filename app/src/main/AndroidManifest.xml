@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Cardna"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="org.cardna.presentation.ui.login.SignupActivity"
+            android:name="org.cardna.presentation.ui.login.SetNameActivity"
             android:exported="true" />
         <activity
             android:name="org.cardna.presentation.MainActivity"
