@@ -24,6 +24,7 @@ class SetNameFinishedActivity :
     override fun initView() {
         setSleep()
         setClickListener()
+        setTextView()
     }
 
     private fun setClickListener() {
@@ -33,8 +34,14 @@ class SetNameFinishedActivity :
 
     private fun setTextView() {
         val welcomeText = intent.getStringExtra("welcomeText")
-        val title = setGradientText(welcomeText!!)
-        val message = setGradientText(binding.tvSetnamefinishedMessage.text.toString())
+
+        with(binding) {
+            tvSetnamefinishedTitle.text = setGradientText(welcomeText!!)
+            tvSetnamefinishedMessage1.text = setGradientText("캬드를")
+            tvSetnamefinishedMessage2.text = setGradientText("추가하러")
+            tvSetnamefinishedMessage3.text = setGradientText("가볼까요?")
+        }
+
     }
 
     private fun setGradientText(welcomeText: String): Spannable? {
@@ -45,14 +52,11 @@ class SetNameFinishedActivity :
             0..welcomeText.length,
             LinearGradientSpan(welcomeText, welcomeText, green, purple)
         )
-        with(binding) {
-            tvSetnamefinishedTitle.text = spannable
-        }
         return spannable
     }
 
     private fun setSleep() {
-        Thread.sleep(2000L)
+
     }
 
     private fun negativeButtonClickListener() {
