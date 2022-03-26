@@ -37,19 +37,11 @@ android {
 }
 
 dependencies {
-    //카카오 로그인
-    implementation group: 'com.kakao.sdk', name: 'usermgmt', version: '1.30.0'
-    implementation group: 'com.kakao.sdk', name: 'kakaolink', version: '1.30.5'
-
-    implementation "com.kakao.sdk:v2-user:2.9.0" // 카카오 로그인
-
     // Lottie
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
     // Glide
     implementation "com.github.bumptech.glide:glide:$glideVersion"
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     kapt "com.github.bumptech.glide:compiler:$glideVersion"
 
     // Retrofit2
