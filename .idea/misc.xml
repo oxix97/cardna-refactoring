@@ -3,28 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2175" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/drawable/ic_cardpack_checked.xml" value="0.2175" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/drawable/ic_maincard_unchecked.xml" value="0.2175" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/drawable/selector_cardpack.xml" value="0.1" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/drawable/selector_insight.xml" value="0.1" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/drawable/selector_maincard.xml" value="0.1" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/drawable/selector_mypage.xml" value="0.1" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/layout/fragment_card_pack.xml" value="0.2318840579710145" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/layout/fragment_insight.xml" value="0.2318840579710145" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/layout/fragment_main_card.xml" value="0.2318840579710145" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/layout/fragment_my_page.xml" value="0.2318840579710145" />
-        <entry key="..\:/Users/TFX5470H/AndroidStudioProjects/CARDNA_Release/app/src/main/res/menu/menu_bottom_nav.xml" value="0.4" />
+        <entry key="../../../../../layout/custom_preview.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable-v24/ic_alarm.xml" value="0.1415" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1415" />
+        <entry key="app/src/main/res/drawable/bg_darkgray_radius_16.xml" value="0.251" />
+        <entry key="app/src/main/res/drawable/bg_edit_underline_white1_white4.xml" value="0.2315" />
+        <entry key="app/src/main/res/drawable/bg_gradient_green_purple_radius_5.xml" value="0.251" />
+        <entry key="app/src/main/res/drawable/bg_signup_gradient_green_purple_radius_10.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/bg_signup_white3_radius_10.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/bg_white3_radius_5.xml" value="0.251" />
+        <entry key="app/src/main/res/drawable/ic_bt_login_kakao.xml" value="0.2315" />
+        <entry key="app/src/main/res/drawable/ic_bt_login_naver.xml" value="0.2315" />
+        <entry key="app/src/main/res/drawable/ic_insight_checked.xml" value="0.1415" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1415" />
+        <entry key="app/src/main/res/drawable/line_white1_1.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/line_white1_2.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/line_white1_white4.xml" value="0.251" />
+        <entry key="app/src/main/res/drawable/line_white4_1.xml" value="0.193" />
+        <entry key="app/src/main/res/font/pretendard_font.xml" value="0.39114583333333336" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.67" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2671875" />
+        <entry key="app/src/main/res/layout/activity_set_name.xml" value="0.7395833333333334" />
+        <entry key="app/src/main/res/layout/activity_set_name_finished.xml" value="0.6163194444444444" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.7209302325581395" />
+        <entry key="app/src/main/res/layout/alert_signup.xml" value="0.33" />
+        <entry key="app/src/main/res/menu/menu_bottom_nav.xml" value="0.3609375" />
       </map>
     </option>
   </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/org/cardna/presentation/ui/maincard/Temp.kt" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/org/cardna/presentation/ui/mypage/Temp.kt" />
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
