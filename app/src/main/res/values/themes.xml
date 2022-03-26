@@ -18,4 +18,5 @@
         <item name="android:windowExitTransition">@transition/trans_explode</item>
 
     </style>
+
 </resources>

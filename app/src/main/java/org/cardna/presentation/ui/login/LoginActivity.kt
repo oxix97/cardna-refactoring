@@ -30,6 +30,7 @@ class LoginActivity :
             }
             tvLoginPolicyPrivate.setOnClickListener {
 
+
             }
             btnLoginKakao.setOnClickListener {
                 setKakaoLogin()

@@ -25,6 +25,7 @@ class SetNameFinishedActivity :
         setSleep()
         setClickListener()
         setTextView()
+
     }
 
     private fun setClickListener() {

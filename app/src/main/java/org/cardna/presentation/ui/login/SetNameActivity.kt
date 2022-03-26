@@ -127,6 +127,7 @@ class SetNameActivity :
         binding.clSetnameContainer.visibility = View.GONE
 
         startSetNameFinishedActivity(welcomeText)
+
     }
 
     private fun setTextGradient(welcomeText: String): Spannable {
