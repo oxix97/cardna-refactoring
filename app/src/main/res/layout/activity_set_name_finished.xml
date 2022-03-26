@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_black"
+        tools:context="org.cardna.presentation.ui.login.SetNameFinishedActivity">
+
+        <TextView
+            android:id="@+id/tv_setnamefinished_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="지우님 반가워요 !"
+            android:textColor="@color/white_1"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="지우님 반가워요!" />
+
+        <TextView
+            android:id="@+id/tv_setnamefinished_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="@string/setnamefinished_tv_message"
+            android:textSize="42sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_setnamefinished_title" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_setnamefinished_negative"
+            style="@style/setnamefinished_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/bg_white3_radius_5"
+            android:text="@string/setnamefinished_btn_negative_text"
+            android:textColor="@color/white_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_setnamefinished_positive"
+            style="@style/setnamefinished_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/bg_gradient_green_purple_radius_5"
+            android:paddingHorizontal="36dp"
+            android:text="@string/setnamefinished_btn_positive_text"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_setnamefinished_negative" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

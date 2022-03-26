@@ -1,18 +1,27 @@
 package org.cardna.presentation.ui.login
 
+import android.app.ActivityOptions
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.text.Spannable
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
+import androidx.core.text.set
+import androidx.core.text.toSpannable
 import androidx.core.widget.addTextChangedListener
 import com.example.cardna.R
 import com.example.cardna.databinding.ActivitySetNameBinding
+import com.example.cardna.databinding.AlertSignupBinding
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.cardna.presentation.base.BaseViewUtil
+import org.cardna.util.LinearGradientSpan
 
 class SetNameActivity :
     BaseViewUtil.BaseAppCompatActivity<ActivitySetNameBinding>(R.layout.activity_set_name) {
@@ -23,12 +32,12 @@ class SetNameActivity :
     }
 
     override fun initView() {
-//        setClickListener()
+        setClickListener()
         setChangedListener()
     }
 
     private fun setClickListener() {
-//        signupCheckListener()
+        initAlertDialog()
     }
 
     private fun setChangedListener() {
@@ -55,29 +64,27 @@ class SetNameActivity :
         }
     }
 
-    fun signupCheckListener(view: View) {
-        initAlertDialog()
-    }
-
     private fun initAlertDialog() {
-        val dialog = Dialog(this)
-        dialog.setContentView(R.layout.alert_signup)
+        binding.btnSignUpNameAccess.setOnClickListener {
+            val dialog = Dialog(this)
+            val dialogBinding = AlertSignupBinding.inflate(dialog.layoutInflater)
+            dialog.setContentView(dialogBinding.root)
 
-        val title = dialog.findViewById<TextView>(R.id.tv_alert_title)
-        val negativeButton = dialog.findViewById<Button>(R.id.btn_alert_negative)
-        val positiveButton = dialog.findViewById<Button>(R.id.btn_alert_positive)
-        val name = with(binding) { "${etSignupLastname.text}${etSignupFirstname.text}" }
-        val firstname = binding.etSignupFirstname.text.toString()
+            val name = with(binding) { "${etSignupLastname.text}${etSignupFirstname.text}" }
+            val firstname = binding.etSignupFirstname.text.toString()
 
-        title.text = "${name}님이 맞으신가요?"
+            dialogBinding.tvAlertTitle.text = "${name}님이 맞으신가요?"
 
-        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-        negativeClickListener(negativeButton, dialog)
-        positiveClickListener(positiveButton, dialog, firstname)
+            with(dialogBinding) {
+                negativeClickListener(btnAlertNegative, dialog)
+                positiveClickListener(btnAlertPositive, dialog, firstname)
+            }
 
-        dialog.setCancelable(false)
-        dialog.show()
+            dialog.setCancelable(false)
+            dialog.show()
+        }
     }
 
     private fun negativeClickListener(button: Button, dialog: Dialog) {
@@ -88,7 +95,8 @@ class SetNameActivity :
 
     private fun positiveClickListener(button: Button, dialog: Dialog, name: String) {
         button.setOnClickListener {
-            Toast.makeText(this, "카드 추가 작성뷰로 이동", Toast.LENGTH_SHORT).show()
+            dialog.dismiss()
+            initAnimation(name)
         }
     }
 
@@ -111,4 +119,29 @@ class SetNameActivity :
         }
     }
 
+    private fun initAnimation(name: String) {
+        val welcomeText = "${name}님 반가워요!"
+        val gradientText = setTextGradient(welcomeText)
+        binding.tvSetnameUsername.text = gradientText
+        binding.tvSetnameUsername.visibility = View.VISIBLE
+        binding.clSetnameContainer.visibility = View.GONE
+
+        startSetNameFinishedActivity(welcomeText)
+    }
+
+    private fun setTextGradient(welcomeText: String): Spannable {
+        val green = getColor(R.color.main_green)
+        val purple = getColor(R.color.main_purple)
+        val spannable = welcomeText.toSpannable()
+        spannable[0..welcomeText.length] =
+            LinearGradientSpan(welcomeText, welcomeText, green, purple)
+        return spannable
+    }
+
+    private fun startSetNameFinishedActivity(welcomeText: String) {
+        val intent = Intent(this, SetNameFinishedActivity::class.java)
+        val bundle = ActivityOptions.makeSceneTransitionAnimation(this).toBundle()
+        intent.putExtra("welcomeText", welcomeText)
+        startActivity(intent, bundle)
+    }
 }
