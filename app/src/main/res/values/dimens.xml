@@ -4,4 +4,11 @@
     <dimen name="design_bottom_navigation_height" tools:override="true">32dp</dimen>
     <dimen name="pageMargin">40dp</dimen>
     <dimen name="pageWidth">240dp</dimen>
+
+    <!--  Main Activity  -->
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">40dp</dimen>
+    <dimen name="design_bottom_navigation_icon_size">40dp</dimen>
+
+    <!--  Setting Activity -->
+    <dimen name="setting_text_margin_top">16dp</dimen>
 </resources>
