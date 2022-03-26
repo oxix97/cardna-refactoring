@@ -38,12 +38,36 @@
             android:name="org.cardna.presentation.ui.setting.view.SettingActivity"
             android:exported="true"/>
         <activity
+            android:name="org.cardna.presentation.ui.login.SetNameFinishedActivity"
+            android:exported="false" />
+        <activity
+            android:name="org.cardna.presentation.ui.login.SetNameActivity"
+            android:exported="true" />
+        <activity
             android:name="org.cardna.presentation.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="org.cardna.presentation.ui.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
+                <data
+                    android:host="oauth"
+                    android:scheme="kakaod4b8fd269d024f5123dd532827422ea8" />
             </intent-filter>
         </activity>
     </application>
