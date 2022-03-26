@@ -23,7 +23,6 @@ class LoginActivity :
         setClickListener()
     }
 
-
     private fun setClickListener() {
         with(binding) {
             tvLoginPolicyUseOfTerm.setOnClickListener {
