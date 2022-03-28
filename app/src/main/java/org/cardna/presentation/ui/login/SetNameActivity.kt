@@ -7,19 +7,15 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.Spannable
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.core.text.set
 import androidx.core.text.toSpannable
 import androidx.core.widget.addTextChangedListener
 import com.example.cardna.R
 import com.example.cardna.databinding.ActivitySetNameBinding
 import com.example.cardna.databinding.AlertSignupBinding
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import org.cardna.presentation.base.BaseViewUtil
 import org.cardna.util.LinearGradientSpan
 

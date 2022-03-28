@@ -46,21 +46,24 @@ class LoginActivity :
     }
 
     private fun setKakaoLogin() {
-        val callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
-            if (error != null) {
-                //Login Fail
-            } else if (token != null) {
-                //Login Success
-                val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                startActivity(intent)
-            }
-        }
-        UserApiClient.instance.run {
-            if (isKakaoTalkLoginAvailable(this@LoginActivity)) {
-                loginWithKakaoTalk(this@LoginActivity, callback = callback)
-            } else {
-                loginWithKakaoAccount(this@LoginActivity, callback = callback)
-            }
-        }
+        val intent = Intent(this, SetNameActivity::class.java)
+        startActivity(intent)
+//        val callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
+//            if (error != null) {
+//                //Login Fail
+//            } else if (token != null) {
+//                //Login Success
+//                    //앱 키 연결 아직 안함
+//                val intent = Intent(this@LoginActivity, MainActivity::class.java)
+//                startActivity(intent)
+//            }
+//        }
+//        UserApiClient.instance.run {
+//            if (isKakaoTalkLoginAvailable(this@LoginActivity)) {
+//                loginWithKakaoTalk(this@LoginActivity, callback = callback)
+//            } else {
+//                loginWithKakaoAccount(this@LoginActivity, callback = callback)
+//            }
+//        }
     }
 }
