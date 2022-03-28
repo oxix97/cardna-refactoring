@@ -4,6 +4,7 @@ import android.app.ActivityOptions
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
+import android.graphics.LinearGradient
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.Spannable
@@ -17,7 +18,6 @@ import com.example.cardna.R
 import com.example.cardna.databinding.ActivitySetNameBinding
 import com.example.cardna.databinding.AlertSignupBinding
 import org.cardna.presentation.base.BaseViewUtil
-import org.cardna.util.LinearGradientSpan
 
 class SetNameActivity :
     BaseViewUtil.BaseAppCompatActivity<ActivitySetNameBinding>(R.layout.activity_set_name) {
@@ -131,7 +131,7 @@ class SetNameActivity :
         val purple = getColor(R.color.main_purple)
         val spannable = welcomeText.toSpannable()
         spannable[0..welcomeText.length] =
-            LinearGradientSpan(welcomeText, welcomeText, green, purple)
+            LinearGradient(welcomeText, welcomeText, green, purple)
         return spannable
     }
 

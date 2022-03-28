@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable-v24/bg_signup_white3_radius_10.xml" value="0.232" />
+        <entry key="app/src/main/res/drawable-v24/bg_white3_radius_5.xml" value="0.232" />
         <entry key="app/src/main/res/drawable-v24/ic_alarm.xml" value="0.1415" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1415" />
         <entry key="app/src/main/res/drawable/bg_darkgray_radius_16.xml" value="0.251" />
@@ -23,7 +25,7 @@
         <entry key="app/src/main/res/font/pretendard_font.xml" value="0.39114583333333336" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2671875" />
-        <entry key="app/src/main/res/layout/activity_set_name.xml" value="0.4883720930232558" />
+        <entry key="app/src/main/res/layout/activity_set_name.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_set_name_finished.xml" value="0.5857988165680473" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.7209302325581395" />
         <entry key="app/src/main/res/layout/alert_signup.xml" value="0.33" />
